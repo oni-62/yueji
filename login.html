@@ -40,7 +40,7 @@ body{background:#f8f4f5;height:100vh;display:flex;align-items:center;justify-con
     <div class="input-box">
         <input type="password" id="pwd" placeholder="请输入登录密码">
         <!-- 你要的密码提示文字 已设置 -->
-        <div class="pwd-tip">医生初始密码为：DR+姓名缩写<br>护士初始密码为：Nur+姓名缩写</div>
+        <div class="pwd-tip">医生初始密码为：Dr+姓名缩写<br>护士初始密码为：Nur+姓名缩写</div>
     </div>
 
     <button class="sub-btn" onclick="login()">立即登录</button>
@@ -74,11 +74,19 @@ function login(){
     if(currentStaff){
         localStorage.setItem("loginUser", JSON.stringify(currentStaff));
         alert("登录成功！欢迎："+currentStaff.name);
-        window.location.href = "file.html";
+        // 戴文轩登录跳转自身医生档案，其余跳转file.html
+        if(currentStaff.account === "YJ01112"){
+            location.href = "daiwenxuan.html";
+        }else{
+            location.href = "file.html";
+        }
     }else{
         alert("账号或密码错误！");
     }
 }
 </script>
+ <div style="position:fixed; right:25px; bottom:20px; font-size:14px; color:#000000;">
+(8/36)
+</div>
 </body>
 </html>

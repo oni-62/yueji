@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>求美者好评 - 戴文轩医师</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Microsoft YaHei",sans-serif;
+}
+
+.header{
+    width:100%;
+    height:70px;
+    background:#ffffff;
+    border-bottom:1px solid #eee;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+.nav{
+    max-width:1100px;
+    margin:0 auto;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#ff5a7d;
+}
+.search{
+    display:flex;
+    align-items:center;
+}
+.search input{
+    width:180px;
+    height:34px;
+    padding:0 10px;
+    border:1px solid #ddd;
+    background:#fff;
+    color:#333;
+    border-radius:4px 0 0 4px;
+    outline:none;
+}
+.search button{
+    height:34px;
+    padding:0 14px;
+    background:#ff5a7d;
+    color:#fff;
+    border:none;
+    border-radius:0 4px 4px 0;
+    cursor:pointer;
+}
+
+body{
+    background:#f9f9f9;
+    padding:100px 15px 60px;
+    color:#333;
+}
+.container{
+    max-width:960px;
+    margin:0 auto;
+    background:#ffffff;
+    padding:40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.top-back{
+    text-align:right;
+    margin-bottom:15px;
+}
+.top-back a{
+    color:#333;
+    text-decoration:none;
+    font-size:14px;
+}
+
+h1{
+    text-align:center;
+    font-size:24px;
+    color:#333;
+    padding-bottom:12px;
+    border-bottom:2px solid #eee;
+    margin-bottom:30px;
+}
+
+.title-block{
+    font-size:17px;
+    color:#333;
+    border-left:4px solid #ff5a7d;
+    padding-left:12px;
+    margin:30px 0 15px;
+}
+
+.text-content{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:12px;
+    text-indent:2em;
+}
+
+.comment-box{
+    background:#fafafa;
+    padding:18px 20px;
+    border-radius:8px;
+    margin-bottom:16px;
+    border-left:4px solid #ff5a7d;
+}
+.comment-box strong{
+    color:#000;  /* 这里改成黑色 */
+    font-size:15px;
+}
+.comment-box p{
+    color:#444;
+    font-size:14px;
+    line-height:1.8;
+    margin-top:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="nav">
+        <div class="logo">悦己医美</div>
+        <div class="search">
+            <input id="searchName" placeholder="搜索项目、医生、医院">
+            <button onclick="searchPatient()">搜索</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="top-back">
+        <a href="index.html">← 返回首页</a>
+    </div>
+
+    <h1>戴文轩医师 | 成功案例 & 求美者好评</h1>
+
+    <h3 class="title-block">一、经典成功案例</h3>
+    <div class="text-content">
+    求美者王女士，术前鼻梁低矮、面中部凹陷、苹果肌干瘪，面部轮廓扁平。戴文轩医师为其定制自然款鼻综合+全脸自体脂肪填充方案，术后五官立体柔和，面部饱满自然，完全保留个人特色，无假面感，恢复速度快，是院内极具代表性的成功案例。
+    </div>
+    <div class="text-content">
+    另有数百例五官整形、轮廓微调、脂肪填充等手术均取得稳定良好效果，术后回访满意度高，不良反应发生率极低，医师技术与审美均获得院内及求美者高度认可。
+    </div>
+
+    <h3 class="title-block">二、求美者真实好评</h3>
+
+    <div class="comment-box">
+        <strong>求美者：王女士</strong>
+        <p>戴医生特别细心，不会乱推销项目，设计非常贴合我原本的长相，做完很自然，身边人都觉得我变好看了，但看不出整容痕迹，非常满意！</p>
+    </div>
+
+    <div class="comment-box">
+        <strong>求美者：李小姐</strong>
+        <p>之前特别担心做成网红脸，戴医生审美很高级，脂肪填充量刚刚好，不肿不僵，恢复期也一直耐心指导，技术和人品都特别好，强烈推荐！</p>
+    </div>
+
+    <div class="comment-box">
+        <strong>求美者：张先生</strong>
+        <p>我的鼻子是修复手术，难度很高，戴医生技术非常稳，术后形态自然，解决了我多年的困扰，医生很负责，所有风险都会提前说清楚，医德很好。</p>
+    </div>
+
+    <div class="comment-box">
+        <strong>求美者：刘同学</strong>
+        <p>无意间在宣传海报上看到戴医生的案例，感觉效果很自然，就预约了咨询，医生很专业，设计方案也很合理，术后效果完全超出预期，非常感谢戴医生！戴医生的生日是不是快到了？我记得跟工号一样，好像是<strong>YJ01112</strong>
+？</p>
+        </p>
+    </div>
+
+</div>
+
+<div style="position:fixed; right:25px; bottom:20px; font-size:14px; color:#333;">
+(7/36)
+</div>
+
+<script>
+// 搜索功能
+function searchPatient(){
+    let key = document.getElementById("searchName").value.trim();
+    if(key == ""){
+        alert("请输入内容");
+        return;
+    }
+    location.href = "search.html?name=" + encodeURIComponent(key);
+}
+
+// 按回车触发搜索
+document.getElementById("searchName").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        searchPatient();
+    }
+});
+</script>
+<!-- 右下角页码 -->
+<div style="position:fixed; right:25px; bottom:20px; font-size:14px; color:#fff;">
+(7/36)
+
+</body>
+</html>

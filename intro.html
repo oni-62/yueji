@@ -54,12 +54,34 @@ body{background:#f7f8fa;color:#333;}
         <h3 class="subtitle">门店信息</h3>
         <p>地址：石嘉市桥西区建国路889号医美大楼</p>
         <p>咨询热线：400-888-9999</p>
+        
     </div>
 </div>
+<script>
+// 搜索功能
+function searchPatient(){
+    let key = document.getElementById("searchName").value.trim();
+    if(key == ""){
+        alert("请输入内容");
+        return;
+    }
+    location.href = "search.html?name=" + encodeURIComponent(key);
+}
+
+// 按回车触发搜索
+document.getElementById("searchName").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        searchPatient();
+    }
+});
+</script>
 <div class="footer">
     <p>悦己医疗美容 ©2008-2025 版权所有</p>
     <p>门店地址：石嘉市桥西区建国路889号医美大楼</p>
     <p>咨询热线：400-888-9999</p>
+    <div style="position:fixed; right:25px; bottom:20px; font-size:14px; color:#fff;">
+(4/36)
+</div>
 </div>
 </body>
 </html>

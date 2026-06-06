@@ -115,7 +115,7 @@ const name = urlParams.get('name');
 // 配置姓名 → 档案页面
 const data = {
     "丁美竹": "dingmeizhu.html",
-    "陈雨欣": "file.html"
+    "戴文轩": "pingjia.html"
 };
 
 const res = document.getElementById("result");
@@ -139,6 +139,13 @@ function searchPatient(){
     }
     location.href = "search.html?name=" + encodeURIComponent(key);
 }
+
+// 按回车触发搜索
+document.getElementById("searchName").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        searchPatient();
+    }
+});
 </script>
 
 </body>

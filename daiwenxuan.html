@@ -218,7 +218,7 @@ h1{
                 <td><strong>执业机构</strong> 悦己医疗美容有限责任医院</td>
             </tr>
             <tr>
-                <td colspan="2"><strong>执业证书编号</strong> 2018110563YM</td>
+                <td colspan="2"><strong>工号</strong> YJ01112</td>
             </tr>
         </table>
 
@@ -242,11 +242,11 @@ h1{
         因个人婚假事宜，与刘庄薇休婚假中，暂未到岗，休假期间门诊及手术工作已全部交接完毕，恢复工作时间另行通知。
         </div>
 
-        <div class="secret-text">术后失联</div>
     </div>
 </div>
 
 <script>
+// 搜索功能
 function searchPatient(){
     let key = document.getElementById("searchName").value.trim();
     if(key == ""){
@@ -255,6 +255,17 @@ function searchPatient(){
     }
     location.href = "search.html?name=" + encodeURIComponent(key);
 }
+
+// 按回车触发搜索
+document.getElementById("searchName").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        searchPatient();
+    }
+});
 </script>
+<!-- 右下角页码 -->
+<div style="position:fixed; right:25px; bottom:20px; font-size:14px; color:#fff;">
+(9/36)
+</div>
 </body>
 </html>

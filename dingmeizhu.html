@@ -229,7 +229,7 @@ h1{
 </div>
 
 <script>
-// 搜索功能（和首页、结果页完全通用）
+// 搜索功能
 function searchPatient(){
     let key = document.getElementById("searchName").value.trim();
     if(key == ""){
@@ -238,7 +238,18 @@ function searchPatient(){
     }
     location.href = "search.html?name=" + encodeURIComponent(key);
 }
+
+// 按回车触发搜索
+document.getElementById("searchName").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        searchPatient();
+    }
+});
 </script>
+<!-- 右下角页码 -->
+<div style="position:fixed; right:25px; bottom:20px; font-size:14px; color:#fff;">
+(6/36)
+</div>
 
 </body>
 </html>
