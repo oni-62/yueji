@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>戴文轩 - 主治医师档案 | 悦己医美官方档案</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Microsoft YaHei",sans-serif;
+}
+.header{
+    width:100%;
+    height:70px;
+    background:#1f4b82;
+    border-bottom:1px solid #16365e;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+.nav{
+    max-width:1100px;
+    margin:0 auto;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+}
+.search{
+    display:flex;
+    align-items:center;
+}
+.search input{
+    width:180px;
+    height:34px;
+    padding:0 10px;
+    border:1px solid #bcd0e8;
+    outline:none;
+    border-radius:4px 0 0 4px;
+    background:#fff;
+}
+.search button{
+    height:34px;
+    padding:0 14px;
+    background:#326cb9;
+    color:#fff;
+    border:none;
+    border-radius:0 4px 4px 0;
+    cursor:pointer;
+}
+body{
+    background:#e8f0fa;
+    padding:100px 15px 40px;
+    color:#223344;
+}
+.resume-box{
+    max-width:960px;
+    margin:0 auto;
+    background:#ffffff;
+    display:flex;
+    box-shadow:0 2px 12px rgba(20,55,95,0.12);
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #d1e1f5;
+}
+.left-side{
+    width:30%;
+    background:#f0f6fd;
+    padding:40px 20px;
+    text-align:center;
+}
+.user-img{
+    width:180px;
+    height:220px;
+    border-radius:8px;
+    object-fit:cover;
+    border:2px solid #c9dcf3;
+    margin-bottom:25px;
+}
+.status-dot{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:#ff4444;
+    border-radius:50%;
+    margin-left:6px;
+}
+.right-main{
+    width:70%;
+    padding:40px;
+}
+.top-back{
+    text-align:right;
+    margin-bottom:15px;
+}
+.top-back a{
+    color:#446699;
+    text-decoration:none;
+    font-size:14px;
+}
+.top-back a:hover{
+    color:#27589c;
+}
+h1{
+    text-align:center;
+    font-size:24px;
+    color:#1f3b61;
+    padding-bottom:12px;
+    border-bottom:2px solid #d6e3f5;
+    margin-bottom:30px;
+}
+.title-block{
+    font-size:17px;
+    color:#1f3b61;
+    border-left:4px solid #326cb9;
+    padding-left:12px;
+    margin:28px 0 15px;
+}
+.text-content{
+    font-size:15px;
+    line-height:1.9;
+    color:#445566;
+    text-indent:2em;
+}
+.base-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:15px;
+}
+.base-table td{
+    border:1px solid #d1e1f5;
+    padding:13px 15px;
+    font-size:15px;
+    vertical-align:middle;
+    color:#445566;
+    background:#fafcff;
+}
+.base-table td strong{
+    color:#1f3b61;
+    font-weight:bold;
+    margin-right:12px;
+}
+.info-block{
+    margin-bottom:30px;
+}
+.info-block h3{
+    font-size:17px;
+    color:#1f3b61;
+    border-left:4px solid #326cb9;
+    padding-left:12px;
+    margin-bottom:15px;
+}
+.info-block p{
+    font-size:15px;
+    line-height:2.2;
+    color:#334455;
+}
+.info-block p strong{
+    color:#1f3b61;
+    display:inline-block;
+    width:120px;
+    font-weight:bold;
+}
+.secret-text{
+    color:#fff;
+    font-size:1px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="nav">
+        <div class="logo">悦己医美</div>
+        <div class="search">
+            <input id="searchName" placeholder="搜索项目、医生、医院">
+            <button onclick="searchPatient()">搜索</button>
+        </div>
+    </div>
+</div>
+
+<div class="resume-box">
+    <div class="left-side">
+        <img class="user-img" src="images/daiwenxuan.png" alt="戴文轩医师照片">
+        <p>在岗状态：未到岗<span class="status-dot"></span></p>
+    </div>
+
+    <div class="right-main">
+        <div class="top-back">
+            <a href="index.html">← 返回首页</a>
+        </div>
+        <h1>医师执业公开档案</h1>
+
+        <div class="info-block">
+            <h3>基本信息</h3>
+            <p><strong>姓名：</strong>戴文轩</p>
+            <p><strong>职称：</strong>美容外科主治医师</p>
+            <p><strong>从业年限：</strong>8年</p>
+            <p><strong>擅长：</strong>鼻综合、自体脂肪填充、下巴塑形</p>
+        </div>
+
+        <h3 class="title-block">一、执业资质详情</h3>
+        <table class="base-table">
+            <tr>
+                <td><strong>执业类别</strong> 临床</td>
+                <td><strong>毕业院校</strong> 省内重点医科大学临床医学</td>
+            </tr>
+            <tr>
+                <td><strong>执业范围</strong> 美容外科专业</td>
+                <td><strong>执业机构</strong> 悦己医疗美容有限责任医院</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>执业证书编号</strong> 2018110563YM</td>
+            </tr>
+        </table>
+
+        <h3 class="title-block">二、个人从业简介</h3>
+        <div class="text-content">
+        戴文轩医师为人正直、恪守医疗准则，从业以来始终把求美者安全放在首位，深耕自然风整形美学，坚持实事求是沟通手术利弊，从不刻意夸大效果、诱导消费，在求美者与院内同事间口碑优良。从业多年持续参与医美行业学术交流会，不断优化手术技法，是院内责任心极强的骨干医师。
+        </div>
+
+        <h3 class="title-block">三、专项技术擅长</h3>
+        <div class="text-content">
+        主攻韩式综合隆鼻、全脸自体脂肪精细化填充、下颌下巴假体塑形、面部凹陷修复项目。手术注重贴合求美者原生五官基础，优先保留个人辨识度，如实告知手术风险与恢复期，拒绝不合理的超额手术方案。
+        </div>
+
+        <h3 class="title-block">四、院内接诊记录</h3>
+        <div class="text-content">
+        年度接诊整形手术案例三百余例，待人耐心负责。丁美竹为其经手的重点案例，术前他曾多次提醒医院，求美者手术项目叠加过多，存在术后风险隐患，但未被院方采纳。
+        </div>
+
+        <h3 class="title-block">五、离岗备注（院内记录）</h3>
+        <div class="text-content">
+        因个人婚假事宜，与刘庄薇休婚假中，暂未到岗，休假期间门诊及手术工作已全部交接完毕，恢复工作时间另行通知。
+        </div>
+
+        <div class="secret-text">术后失联</div>
+    </div>
+</div>
+
+<script>
+function searchPatient(){
+    let key = document.getElementById("searchName").value.trim();
+    if(key == ""){
+        alert("请输入内容");
+        return;
+    }
+    location.href = "search.html?name=" + encodeURIComponent(key);
+}
+</script>
+</body>
+</html>
